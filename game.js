@@ -1,25 +1,14 @@
-/*
-  Code modified from:
-  http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/
-  using graphics purchased from vectorstock.com
-*/
 
-/* Initialization.
-Here, we create and add our "canvas" to the page.
-We also load all of our images. 
-*/
-
-//she will say yes after how many time you flirt her?
 let canvas;
 let ctx;
 
 canvas = document.createElement("canvas");
 ctx = canvas.getContext("2d");
-
-
 canvas.width = 512;
 canvas.height = 480;
 document.body.appendChild(canvas);
+var w = window;
+requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame || w.msRequestAnimationFrame || w.mozRequestAnimationFrame;
 
 let bgReady, boyReady, girlReadyE;
 let bgImage, boyImage, girlImageE;
@@ -140,9 +129,6 @@ var main = function () {
     render();
     requestAnimationFrame(main);
 };
-var w = window;
-requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame || w.msRequestAnimationFrame || w.mozRequestAnimationFrame;
-
 // Let's play this game!
 loadImages();
 setupKeyboardListeners();

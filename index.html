@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duy's canvas game</title>
+    <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
 
+    <div class="container" style="color: rgb(0, 0, 0);">
+        <div class="container_1">
+            <div class="container_2">
+                <h1>LIFE IS NOT EASY</h1>
+                <div class="container">
+                    <div>
+                        <div class="form">
+                            <form>
+                                <input type="text" id="name">
+                                <input type="button" onclick=" username" value="What's your username?!">
+                                <div id="usernameArea"></div>
+                            </form>
+                        </div>
+
+                        <div>
+                            <span class="score" id="score">0</span>
+                        </div>
+
+                        <div>
+                            <div id="timecount"> Your time is counted</div>
+                        </div>
 
 
-    <script src="game.js"></script>
+                        
+                        <button id="Reset" onclick="resetGame()"> Reset Game</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8   infor">
+                <canvas id="mycanvas" class="border"></canvas>
+            </div>
+
+        </div>
+
+        <script src="game.js"></script>
 </body>
+
 </html>

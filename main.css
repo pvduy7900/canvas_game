@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    padding: "10px";
+
+}
+
+body{
+    background-color: darksalmon;
+}
+form{
+    padding-bottom: 0%;
+}
